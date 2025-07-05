@@ -12,9 +12,12 @@ data = pd.read_csv("D:\Bangalore_Restaurants.csv")
 data1 = pd.read_csv("D:\Pune Restaurants.csv")
 print(data.head(5))
 print(data1.head(5))
+<<<<<<< HEAD
 print(data.shape)
 print(data.columns)
 print(data.isnull().sum())
 print(data1.shape)
 print(data1.columns)
 print(data1.isnull().sum())
+=======
+>>>>>>> bc285e57f945e6e5a6013b8415171aba8a9fbe1f
