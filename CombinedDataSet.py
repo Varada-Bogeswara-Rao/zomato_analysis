@@ -18,3 +18,4 @@ if len(combined_data) == 9906:
  print("Successfully merged datasets with 9906 rows.")
 else:
   print(f"Number of rows in the merged dataset: {len(combined_data)}. Pleasecheck your merge conditions.")
+print(combined_data.head())  
