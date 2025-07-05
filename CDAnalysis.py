@@ -73,3 +73,8 @@ plt.title('Comparison of Restaurants Across Localities')
 plt.legend()
 plt.tight_layout()
 plt.show()
+IQR = combined_data['Pricing_for_2'].quantile(0.75)-combined_data['Pricing_for_2'].quantile(0.25)
+lower_fence = combined_data['Pricing_for_2'].quantile(0.25)- 1.5 * IQR
+upper_fence = combined_data['Pricing_for_2'].quantile(0.75) + 1.5 * IQR
+outliers = combined_data[(combined_data['Pricing_for_2'] < lower_fence) |(combined_data['Pricing_for_2'] > upper_fence)]
+print('Number of outliers:', len(outliers))
