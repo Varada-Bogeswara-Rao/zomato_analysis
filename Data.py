@@ -28,4 +28,5 @@ data['Dining_Rating'].fillna(data['Dining_Rating'].mean(),inplace=True)
 data['Dining_Review_Count'].fillna(data['Dining_Review_Count'].mean(),inplace =True)
 data['Delivery_Rating_Count'].fillna(data['Delivery_Rating_Count'].mean(),inplace = True)
 print(data.isnull().sum())
- 
+data1.describe()
+data.describe()
